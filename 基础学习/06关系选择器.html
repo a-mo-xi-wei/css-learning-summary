@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        div p{
+            color: aqua;
+        }
+        div>p,span{/*可一次性选多个标签，用逗号隔开*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>段落1</p>
+    <b>
+        <p>段落2</p>
+    </b>
+    <span>你好</span>
+
+</div>
+<p>盒子</p>
+</body>
+</html>
+<!--后代（所有后代）用 空格 子元素(子代)用 >-->

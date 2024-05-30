@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小案例</title>
+    <style>
+        .Box{
+            width:200px;
+            height:200px;
+            border:2px solid #f00;
+            position:relative;
+            line-height: 50px;
+            text-align:center;
+            /*overflow: hidden;*/
+        }
+        .Box:hover .zhaozi{
+            width:200px;
+            height:50px;
+            position:absolute;
+            bottom:0;
+            left:0;
+            background-color:rgba(0,0,0,0.5);
+            /*opacity: 0.5;*/
+            color:white;
+            /*第一步 ： 超出部分隐藏*/
+            overflow: hidden;
+            /*第二步 ： 设置文字不换行*/
+            white-space: nowrap;
+            /*第三步 ： 设置生略号*/
+            text-overflow: ellipsis;
+
+        }
+        .Box1{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+<div class="Box">
+    <img src="三玖天下第一.jpg" width="200" height="200" alt="">
+    <div class="zhaozi">
+        超靓图片超清美观精美无比靓吓你的双眼
+    </div>
+</div>
+<div class="Box1">
+    <img src="background.jpg" width="200" height="100" alt="">
+    very good
+</div>
+</body>
+</html>

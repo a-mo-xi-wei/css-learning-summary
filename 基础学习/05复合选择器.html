@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>复合选择器</title>
+</head>
+<style>
+    .ft30{
+        font-size:30px;
+    }
+    .red{
+        color:red;
+    }
+    p{
+        color:green;
+    }
+    /* 用多个类名选择同一个元素 */
+
+    /* 标签加类名选择同一个元素
+    注意：标签名和类名中间不能有任何内容
+    */
+    div.ft30.red{
+        text-decoration:underline;
+    }
+
+</style>
+<body>
+<div class="ft30 red">这是一个盒子</div>
+<span class="ft30 red">我是文本</span>
+<p class="ft30">段落部分</p>
+<a class="ft30" href="#">我是超链接</a>
+<b class="red">文字加粗</b>
+<div class="f">普通盒子</div>
+</body>
+</html>

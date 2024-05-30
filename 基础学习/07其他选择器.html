@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>其他选择器</title>
+    <style>
+        /*通配选择器
+       *{
+           color: red;
+       }
+       */
+       /*
+       伪类选择器
+        a:link{color:red}
+        a:active{color: green}  !*按住*!
+        */
+        a:hover{color:red;font-size:20px;}
+
+        p:first-letter{ /*伪对象选择器*/
+            font-size: 20px;
+            color:red;
+        }
+        div:first-line{
+            font-size: 20px;
+            color:green;
+        }
+        /*[age]{  属性选择器 : 1.[属性名]
+            color:red;
+        }*/
+       /* [name="passwd"]{
+            属性选择器 : 2.[属性名="属性值"]
+            color:green;
+        }*/
+
+    </style>
+</head>
+
+<body>
+<div>盒子</div>
+<hr>
+<span>内容</span>
+<hr>
+
+<a href="https://www.baidu.com" target="_blank">百度</a>
+<h1>我爱学习</h1>
+<p>我爱杯中酒</p>
+<p>爱之不敢求</p>
+<p>学道北海仙</p>
+<p>习之势翩翩</p>
+<div>
+    大洲末年，妖魔乱世。神秘少女<b>帝子殇</b>携上古先贤的血脉之力云游四方，
+    以求安定天下，却屡屡陷入困局。所幸，一点情丝所系，
+    将身负悲惨命运的少年<b>韩箕</b>与她牵绊在一起，少年舍命相护，
+    与她一起踏上寻找太煜九鼎的旅途，上演一段感人肺腑的仙侠奇缘。
+</div>
+<form>
+    <input type="text" name="username" age="12">
+    <input type="password" name="passwd">
+    <input type="submit">
+</form>
+
+
+</body>
+</html>

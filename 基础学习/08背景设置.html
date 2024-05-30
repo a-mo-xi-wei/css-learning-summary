@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景设置</title>
+    <style>
+        div{
+            height:600px;
+            width:600px;
+            background-color: red;
+            background-image: url(background.jpg);
+            background-repeat: no-repeat;   /*不平铺*/
+            /*调整背景图片大小 ，单设一边，则另一边按比例调整*/
+            background-size: 200px;
+            /*调整背景图的位置*/
+            /*background-position:100px 100px;*/
+            background-position: center right;
+            line-height:100px;/*行高*/
+            /*设置背景图不受滚动条的影响*/
+            background-attachment: fixed;
+            /*background:#abcdef url(background.jpg) no-repeat bottom right;*/
+        }
+        body{
+            background-image: url(三玖天下第一.jpg);
+            background-size: 150px;
+
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background-color:rgba(0,0,255,0.5);
+        }
+    </style>
+</head>
+<body>
+<div>
+    盒子
+</div>
+<div class="box"></div>
+</body>
+</html>

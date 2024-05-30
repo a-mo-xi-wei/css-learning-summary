@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>2D变换</title>
+</head>
+<style>
+    .box{
+        width:800px;
+        height:500px;
+        background:#eee;
+    }
+    .s1{
+        width:100px;
+        height:100px;
+        background:#00f;
+        transition:all 5s ease;
+    }
+    .box:hover .s1{
+        /* 2d变换移动 */
+        /*transform:translate(200px,100px);	*/
+        /* 2d变换旋转 */
+        /*transform:rotate(135deg);*/
+        /* 2d放大缩小，一个值的时候代表宽和高都放大的倍数，两个值的时候第一个代表宽的倍数，第二个代表高的倍数 */
+        /*transform:scale(2,3);*/
+        height:400px;
+        width:500px;
+    }
+</style>
+<body>
+<div class="box">
+    <div class="s1"></div>
+</div>
+</body>
+</html>

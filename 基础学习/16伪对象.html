@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪对象</title>
+    <style>
+        .Box{
+            width:150px;
+            height:300px;
+            border:1px solid red;
+            background:pink;
+        }
+        /*伪元素，元素前面加内容*/
+        .Box::before{
+            /*伪对象样式中必须有content属性，否则伪对象无效*/
+            content:"好诗";
+            display: block;
+            width:100px;
+            height:100px;
+            background-color:lightgreen;
+            font-weight: bold;
+            text-align: center;
+        }
+        .Box::after{
+            /*content:"end";*//*不加则无效*/
+            content:"end";
+            display:block;
+            width:100px;
+            height:100px;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+<div class="Box">
+    清明时节雨纷纷，
+    路上行人欲断魂。
+    借问酒家何处有，
+    牧童遥指杏花村。
+</div>
+</body>
+</html>
